@@ -1541,7 +1541,7 @@ dispatcher.add_handler(sex_HANDLER)
 
 
 cmdStrings = ['check','inventory','slot', 'draw', 'start','credit','give','add','mycards','sex','game','button','pop','increase']
-cmdFuncs = [check, inventory, slot, draw, start , credit , give , add , mycards , sex, game , button , pop , increase]
+cmdFuncs = [check, inventory, slot, draw, starts , credit , give , add , mycards , sex, game , button , pop , increase]
 for x, y in zip(cmdStrings, cmdFuncs):
     dispatcher.add_handler(CommandHandler(x, y, filters = approved_chat_filter))
 
